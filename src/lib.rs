@@ -17,8 +17,8 @@ impl Config {
         let filename = args[2].clone();
 
         let case_sensitive = env::var("CASE_INSENSITIVE").is_err();
-        for agrument in env::args() {
-            println!("Argument: {}", agrument);
+        for argument in env::args() {
+            println!("Argument: {}", argument);
         }
 
         Ok(Config { query, filename, case_sensitive } )
